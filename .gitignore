@@ -1,5 +1,9 @@
 node_modules
 package-lock.json
+database
+dist
+pnpm-lock.yaml
+
 .env
 .editorconfig
 .prettierignore
