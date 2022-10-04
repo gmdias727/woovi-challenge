@@ -4,8 +4,13 @@ database
 dist
 pnpm-lock.yaml
 
+
 .env
+.vscode
 .editorconfig
 .prettierignore
 .prettierrc.json
 .eslintrc.js
+mock.txt
+private.key
+pnpm-lock.yaml
