@@ -6,9 +6,8 @@ dotenv.config();
 const URI = process.env.MONGODB_URI;
 
 export const databaseConnection = async () => {
-    if (URI !== undefined) {
+    if (URI === typeof String) {
         return await mongoose.connect(URI);
-    } else {
-        throw new Error("Failed to connect to MongoDB database");
     }
+    throw new Error("Missing MongoDB URI");
 };
